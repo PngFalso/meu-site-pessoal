@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.bloco {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#cabeçalho {
+    background-color: #222;
+    color: white;
+}
+
+.navbloco {
+    width: 90%;
+    max-width: 1000px;
+    min-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.subsessões {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.subsessões a {
+    font-size: 15px;
+}
+
+.subsessões a:hover {
+    color: #bbb;
+}
+
+.inicio {
+    background-color: white;
+    padding: 90px 0;
+}
+
+.blocogrid {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.sobremim h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.descrição {
+    color: #555;
+}
+
+.caracteristicas {
+    background-color: #e8e8e8;
+    border: 1px solid #ccc;
+    padding: 30px;
+}
+
+.caracteristicas h2 {
+    margin-bottom: 10px;
+}
+
+.caracteristicas p {
+    color: #555;
+}
+
+.seção {
+    padding: 70px 0;
+}
+
+.seção:nth-child(even) {
+    background-color: #e9e9e9;
+}
+
+.titulo {
+    color: #666;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.cabeçalhoseção h2,
+.habilidadesbloco h2,
+.blocoseção h2,
+.contatogrid h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.sobregrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.sobregrid p {
+    margin-bottom: 15px;
+}
+
+.infocaixa {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.infocaixa div {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.infocaixa div:last-child {
+    border-bottom: none;
+}
+
+.habilidadegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.hablidadesec,
+.hablidadeft {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 25px;
+}
+
+.habilidadeicon {
+    width: 50px;
+    height: 40px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hablidadesec h3,
+.hablidadeft h3 {
+    margin-bottom: 10px;
+}
+
+.hablidadesec p,
+.hablidadeft p {
+    color: #555;
+}
+
+.projetogrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.projectsec {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 25px;
+}
+
+.projetonome {
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.projectsec h3 {
+    margin-bottom: 10px;
+}
+
+.projectsec p {
+    color: #555;
+}
+
+.contatogrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.contatogrid p {
+    color: #555;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item,
+.contatobloco {
+    display: block;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+
+.contatobloco:hover {
+    background-color: #eee;
+}
+
+.contatotabela {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 800px) {
+    .navbloco {
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .subsessões {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .blocogrid,
+    .sobregrid,
+    .habilidadegrid,
+    .projetogrid,
+    .contatogrid {
+        grid-template-columns: 1fr;
+    }
+
+    .inicio {
+        padding: 60px 0;
+    }
+
+    .sobremim h1 {
+        font-size: 32px;
+    }
+}
